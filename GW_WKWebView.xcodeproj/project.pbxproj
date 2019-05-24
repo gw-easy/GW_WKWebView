@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		284AE3ED2292B58300C9FA3D /* GW_WXPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 284AE3EB2292B58300C9FA3D /* GW_WXPayManager.m */; };
-		28728F1A22858D3D00471207 /* WKWebView+GW_Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28728F1822858D3D00471207 /* WKWebView+GW_Utils.m */; };
-		28728F1D22858D5700471207 /* GW_WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28728F1C22858D5700471207 /* GW_WKWebViewController.m */; };
+		289752872297973500C5B288 /* GW_WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289752812297973500C5B288 /* GW_WKWebViewController.m */; };
+		289752882297973500C5B288 /* WKWebView+GW_Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 289752822297973500C5B288 /* WKWebView+GW_Utils.m */; };
+		289752892297973500C5B288 /* GW_WXPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 289752832297973500C5B288 /* GW_WXPayManager.m */; };
 		28EB6AC622783BE1004F923F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EB6AC522783BE1004F923F /* AppDelegate.m */; };
 		28EB6AC922783BE2004F923F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EB6AC822783BE2004F923F /* ViewController.m */; };
 		28EB6ACC22783BE2004F923F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EB6ACA22783BE2004F923F /* Main.storyboard */; };
@@ -19,12 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		284AE3EB2292B58300C9FA3D /* GW_WXPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW_WXPayManager.m; sourceTree = "<group>"; };
-		284AE3EC2292B58300C9FA3D /* GW_WXPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_WXPayManager.h; sourceTree = "<group>"; };
-		28728F1822858D3D00471207 /* WKWebView+GW_Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+GW_Utils.m"; sourceTree = "<group>"; };
-		28728F1922858D3D00471207 /* WKWebView+GW_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+GW_Utils.h"; sourceTree = "<group>"; };
-		28728F1B22858D5700471207 /* GW_WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GW_WKWebViewController.h; sourceTree = "<group>"; };
-		28728F1C22858D5700471207 /* GW_WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GW_WKWebViewController.m; sourceTree = "<group>"; };
+		289752812297973500C5B288 /* GW_WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW_WKWebViewController.m; sourceTree = "<group>"; };
+		289752822297973500C5B288 /* WKWebView+GW_Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+GW_Utils.m"; sourceTree = "<group>"; };
+		289752832297973500C5B288 /* GW_WXPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GW_WXPayManager.m; sourceTree = "<group>"; };
+		289752842297973500C5B288 /* GW_WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_WKWebViewController.h; sourceTree = "<group>"; };
+		289752852297973500C5B288 /* GW_WXPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_WXPayManager.h; sourceTree = "<group>"; };
+		289752862297973500C5B288 /* WKWebView+GW_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+GW_Utils.h"; sourceTree = "<group>"; };
 		28EB6AC122783BE1004F923F /* GW_WKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GW_WKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EB6AC422783BE1004F923F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28EB6AC522783BE1004F923F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289752802297973500C5B288 /* GW_WKWebViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				289752812297973500C5B288 /* GW_WKWebViewController.m */,
+				289752822297973500C5B288 /* WKWebView+GW_Utils.m */,
+				289752832297973500C5B288 /* GW_WXPayManager.m */,
+				289752842297973500C5B288 /* GW_WKWebViewController.h */,
+				289752852297973500C5B288 /* GW_WXPayManager.h */,
+				289752862297973500C5B288 /* WKWebView+GW_Utils.h */,
+			);
+			path = GW_WKWebViewKit;
+			sourceTree = "<group>";
+		};
 		28EB6AB822783BE1004F923F = {
 			isa = PBXGroup;
 			children = (
@@ -67,16 +80,11 @@
 		28EB6AC322783BE1004F923F /* GW_WKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				289752802297973500C5B288 /* GW_WKWebViewKit */,
 				28EB6AC422783BE1004F923F /* AppDelegate.h */,
 				28EB6AC522783BE1004F923F /* AppDelegate.m */,
 				28EB6AC722783BE2004F923F /* ViewController.h */,
 				28EB6AC822783BE2004F923F /* ViewController.m */,
-				28728F1B22858D5700471207 /* GW_WKWebViewController.h */,
-				28728F1C22858D5700471207 /* GW_WKWebViewController.m */,
-				28728F1922858D3D00471207 /* WKWebView+GW_Utils.h */,
-				28728F1822858D3D00471207 /* WKWebView+GW_Utils.m */,
-				284AE3EC2292B58300C9FA3D /* GW_WXPayManager.h */,
-				284AE3EB2292B58300C9FA3D /* GW_WXPayManager.m */,
 				28EB6ACA22783BE2004F923F /* Main.storyboard */,
 				28EB6ACD22783BE3004F923F /* Assets.xcassets */,
 				28EB6ACF22783BE3004F923F /* LaunchScreen.storyboard */,
@@ -156,12 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289752882297973500C5B288 /* WKWebView+GW_Utils.m in Sources */,
 				28EB6AC922783BE2004F923F /* ViewController.m in Sources */,
 				28EB6AD422783BE3004F923F /* main.m in Sources */,
 				28EB6AC622783BE1004F923F /* AppDelegate.m in Sources */,
-				28728F1A22858D3D00471207 /* WKWebView+GW_Utils.m in Sources */,
-				28728F1D22858D5700471207 /* GW_WKWebViewController.m in Sources */,
-				284AE3ED2292B58300C9FA3D /* GW_WXPayManager.m in Sources */,
+				289752872297973500C5B288 /* GW_WKWebViewController.m in Sources */,
+				289752892297973500C5B288 /* GW_WXPayManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
