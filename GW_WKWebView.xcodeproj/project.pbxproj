@@ -51,12 +51,12 @@
 		289752802297973500C5B288 /* GW_WKWebViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				289752812297973500C5B288 /* GW_WKWebViewController.m */,
-				289752822297973500C5B288 /* WKWebView+GW_Utils.m */,
-				289752832297973500C5B288 /* GW_WXPayManager.m */,
 				289752842297973500C5B288 /* GW_WKWebViewController.h */,
+				289752812297973500C5B288 /* GW_WKWebViewController.m */,
 				289752852297973500C5B288 /* GW_WXPayManager.h */,
+				289752832297973500C5B288 /* GW_WXPayManager.m */,
 				289752862297973500C5B288 /* WKWebView+GW_Utils.h */,
+				289752822297973500C5B288 /* WKWebView+GW_Utils.m */,
 			);
 			path = GW_WKWebViewKit;
 			sourceTree = "<group>";

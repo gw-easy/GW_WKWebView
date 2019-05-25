@@ -35,20 +35,14 @@
 }
 
 - (void)adjustTextIndent:(CGFloat)size Company:(NSString *)Company tag:(NSString *)tag{
-    //处理短文改错正确答案显示不全的问题
+    //短文缩进
     NSString *test = [NSString stringWithFormat:
                       @"var objs= document.getElementsByTagName('%@');"
                       "for (i = 0; i < objs.length;i++){"
                       "var obj = objs[i];"
-                      "var textIndent = obj.style.textIndent;"
-                      "textIndent = textIndent.substring(0,textIndent.length-2);"
-                      "var num = Number(textIndent);"
-                      "var allSize = %f;"
-                      "if (num > allSize){"
-                      "num = allSize;"
-                      "textIndent = num.toString() + \"%@\";"
+                      "var textIndent = %f.toString() + \"%@\";"
                       "obj.style.textIndent = textIndent;}"
-                      "}",tag,size,Company];
+                      ,tag,size,Company];
     [self evaluateJavaScript:test completionHandler:nil];
 }
 

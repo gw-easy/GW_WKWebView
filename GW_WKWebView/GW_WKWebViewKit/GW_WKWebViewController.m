@@ -196,17 +196,36 @@ typedef enum : NSUInteger {
 
 #pragma mark ================ WKNavigationDelegate ================
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+    
+    //处理短文改错正确答案显示不全的问题
+
+//    NSString *test = [NSString stringWithFormat:
+//                      @"var objs= document.getElementsByTagName('p');"
+//                      "for (i = 0; i < objs.length;i++){"
+//                      "var obj = objs[i];"
+//                      "var textIndent = obj.style.textIndent;"
+//                      "textIndent = textIndent.substring(0,textIndent.length-2);"
+//                      "var num = Number(textIndent);"
+//                      "var allSize = %f;"
+//                      "if (num > allSize){"
+//                      "num = allSize;"
+//                      "textIndent = num.toString() + \"%@\";"
+//                      "obj.style.textIndent = textIndent;}"
+//                      "}",tag,size,Company];
+//    [self evaluateJavaScript:test completionHandler:nil];
+    
+    
     #pragma mark - 普通webview适配样式
 //    [webView normolWebView];
     
 //    文字100%比例呈现
-    [webView fontSizeAdjust:100];
+//    [webView fontSizeAdjust:100];
 ////    文字颜色改变
 //    [webView fontColorAdjust:@"#569990"];
 ////    图片自适应
 //    [webView reLayoutTableJS_Style:200];
 //    文字缩进
-//    [webView adjustTextIndent:200];
+    [webView adjustTextIndent:100];
 
 //    更新返回按钮
     [self updateNavigationItems];
