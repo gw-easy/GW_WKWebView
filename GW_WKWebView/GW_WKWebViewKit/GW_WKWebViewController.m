@@ -294,7 +294,9 @@ typedef enum : NSUInteger {
 
 - (WKWebViewConfiguration *)config{
     if (!_config) {
+        
         _config = [[WKWebViewConfiguration alloc] init];
+        
         // 设置偏好设置
         _config.preferences = [[WKPreferences alloc] init];
         // 默认为0
@@ -309,6 +311,14 @@ typedef enum : NSUInteger {
         
 // 通过JS与webview内容交互
         _config.userContentController = [[WKUserContentController alloc] init];
+        
+//        如果涉及到js调用方法需要移动端直接返回值的问题，移动端可以在页面加载前直接先将值存入web本地存储中，让js直接获取
+//        WKUserScriptInjectionTimeAtDocumentStart, js加载前
+//           WKUserScriptInjectionTimeAtDocumentEnd。js加载后
+//        forMainFrameOnly NO(全局窗口) yes（主窗口）
+        NSString *sendStr = [NSString stringWithFormat:@"localStorage.setItem(\"accessToken\",%@)",@"1234444555666777"];
+        WKUserScript *uScript = [[WKUserScript alloc] initWithSource:sendStr injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
+        [_config.userContentController addUserScript:uScript];
         
     }
     return _config;
